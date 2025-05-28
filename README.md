@@ -54,23 +54,18 @@ yarn install
 ### Setting up Supabase
 1. Create a Supabase project at [supabase.com](https://supabase.com/)
 2. Navigate to **Settings > API** and copy the **Project URL** and **Anon Key**.
-3. Set up authentication and database tables for storing user data, plant garden, and identification results.
-4. Create the following tables in your Supabase database:
+3. Set up authentication and database tables for storing user data and any domain‑specific information your bots might need.
+4. Create the tables required for your project, for example:
    - `users`: Store user profiles
-   - `plants`: Store plant information
-   - `user_plants`: Store plants added to user's garden
-   - `identification_history`: Store plant identification results
+   - add other domain‑specific tables as needed
 
 ### Environment Variables
 Create a `.env.local` file in the root directory and add the following:
 ```sh
 EXPO_PUBLIC_SUPABASE_URL=your-supabase-url
 EXPO_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
-EXPO_PUBLIC_PLANT_NET_API_KEY=your-plantnet-api-key
 EXPO_PUBLIC_GEMINI_API_KEY=your-openai-api-key # For chatbot functionality
-PLANT_NET_API_KEY = "your-plantnet-api-key"
-KINDWISE_HEALTH_KEY = "your-kindwise-health-key"
-KINDWISE_IDENTIFY_KEY = "your-kindwise-identify-key"
+# Add any additional environment variables your bots require here
 ```
 
 ### Running the App

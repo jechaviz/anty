@@ -2,15 +2,12 @@ export default {
   expo: {
     name: "planty",
     slug: "planty",
-    // Your other existing Expo config
+    // Additional Expo configuration can go here
     assetBundlePatterns: [
         "**/*"
       ],
-    extra: {
-      kindwiseIdentifyKey: process.env.KINDWISE_IDENTIFY_KEY,
-      kindwiseHealthKey: process.env.KINDWISE_HEALTH_KEY,
-      plantNetApiKey: process.env.PLANT_NET_API_KEY,
-    },
+    // Previous keys for PlantNet and Kindwise APIs have been removed
+    // Define any extra config or secrets in environment variables as needed
     ios: {
       bundleIdentifier: "com.salmxnz.planty"
     },

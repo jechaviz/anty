@@ -137,27 +137,6 @@ const TabsLayout = () => {
                     }}
                 />
                 <Tabs.Screen
-                    name="explore"
-                    options={{
-                        title: 'Explore',
-                        tabBarIcon: ({ color, focused }) => (
-                            <TabIcon
-                                icon={icons.explore}
-                                color={color}
-                                focused={focused}
-                                name="Explore"
-                            />
-                        ),
-                    }}
-                />
-                <Tabs.Screen
-                    name="identify"
-                    options={{
-                        title: 'Identify',
-                        tabBarIcon: () => <CenterButton />,
-                    }}
-                />
-                <Tabs.Screen
                     name="message"
                     options={{
                         title: 'Message',
@@ -167,20 +146,6 @@ const TabsLayout = () => {
                                 color={color}
                                 focused={focused}
                                 name="Message"
-                            />
-                        ),
-                    }}
-                />
-                <Tabs.Screen
-                    name="care"
-                    options={{
-                        title: 'Care',
-                        tabBarIcon: ({ color, focused }) => (
-                            <TabIcon
-                                icon={icons.care}
-                                color={color}
-                                focused={focused}
-                                name="Care"
                             />
                         ),
                     }}

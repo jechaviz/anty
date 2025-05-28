@@ -18,7 +18,7 @@ node_modules
 # ios
 ios/
 ios/build
-ios/planty.xcodeproj
+ios/anty.xcodeproj
 
 # Expo
 .expo/xcodebuild-error.log

@@ -50,10 +50,8 @@ export default function Index() {
                                     lineHeight: moderateScale(35),
                                 }}
                             >
-                                Plant a tree{' '}
-                                <Text className="text-accent-light dark:text-accent-dark">
-                                    &
-                                </Text>
+                                Start chatting with{' '}
+                                <Text className="text-accent-light dark:text-accent-dark">AI</Text>
                             </Text>
                             <Text
                                 className="text-white dark:text-white text-center font-pbold"
@@ -62,7 +60,7 @@ export default function Index() {
                                     lineHeight: moderateScale(35),
                                 }}
                             >
-                                grow your community
+                                assistants
                             </Text>
                             <Text
                                 className="text-gray-200 mt-4 mb-6 opacity-80 text-center font-pmedium"

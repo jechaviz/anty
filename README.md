@@ -1,15 +1,12 @@
-# Planty
+# Chatbot Template
 
-Planty is an AI-powered Android and iOS application built with React Native and Expo. It leverages the PlantNet API for plant identification, Google Gemini for AI chatbot, Supabase for backend services, and provides a comprehensive plant care & marketplace experience.
+This project is a React Native template for building AI chat applications on Android and iOS. It uses Google Gemini for chat functionality and Supabase for authentication and storage. The original plant identification and shopping features were removed to serve as a lightweight starting point for multiple chatbot experiences.
 
 ## Features
-- 🌱 **Plant Identification**: Take a photo of a plant, and the app will identify it using PlantNet API.
-- 🌿 **Plant Health Analysis**: Check if your plant is healthy or has diseases.
-- 🔍 **Explore Plants**: Browse and search for plants with advanced filtering options.
-- 🪴 **Plant Care**: Track and manage your garden with personalized care instructions.
-- 💬 **AI Chatbot**: Ask plant-related questions and receive AI-powered responses.
-- 📱 **Cross-Platform**: Available on both Android and iOS.
-- 🔥 **Tech Stack**: Built with React Native, Expo, Supabase for authentication and database, and PlantNet API for plant recognition.
+- 💬 **AI Chatbot**: Chat with domain‑specific bots. Multiple bots can be configured (e.g. parking reservations, room bookings).
+- 🎨 **Configurable Palette**: Colors are defined in `config/colors.js` so the palette can easily be customized.
+- 📱 **Cross-Platform**: Works on both Android and iOS using Expo.
+- 🔥 **Tech Stack**: React Native, Expo and Supabase backend.
 
 ## Screenshots
 
@@ -26,32 +23,6 @@ Planty is an AI-powered Android and iOS application built with React Native and 
   <img src="assets/screenshots/Auth/Register_Light.png" width="250" alt="Register Screen">
 </div>
 
-### Plant Identification
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <img src="assets/screenshots/Idenitfy/Plant_Identify.png" width="250" alt="Plant Identification">
-  <img src="assets/screenshots/Idenitfy/Plant_Identify_1.PNG" width="250" alt="Plant Identification Results">
-  <img src="assets/screenshots/Idenitfy/Plant_Health.png" width="250" alt="Plant Health Analysis">
-</div>
-
-### Plant Care
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <img src="assets/screenshots/Care/Care_1.png" width="250" alt="Plant Care">
-  <img src="assets/screenshots/Care/My_Plants_Garden.png" width="250" alt="My Plants Garden">
-  <img src="assets/screenshots/Care/Plant_Stats.png" width="250" alt="Plant Statistics">
-</div>
-
-### Explore & Shop
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <img src="assets/screenshots/Explore Page +Advanced Filtering/explore+page.png" width="250" alt="Explore Page">
-  <img src="assets/screenshots/Explore Page +Advanced Filtering/Filtering.png" width="250" alt="Advanced Filtering">
-  <img src="assets/screenshots/Explore Page +Advanced Filtering/Product_Details_Page.png" width="250" alt="Product Details">
-</div>
-
-### Shopping Cart
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <img src="assets/screenshots/Explore Page +Advanced Filtering/Cart_page.png" width="250" alt="Cart Page">
-  <img src="assets/screenshots/Explore Page +Advanced Filtering/cart_empty.png" width="250" alt="Empty Cart">
-</div>
 
 ### Chat
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">

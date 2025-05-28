@@ -25,6 +25,7 @@ import { v4 as uuidv4 } from 'uuid'
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
 import { useColorScheme } from 'react-native'
 import { Keyboard, Dimensions } from 'react-native'
+import { useLocalSearchParams } from 'expo-router'
 import Typing from '@/components/Typing'
 
 const newUUID = uuidv4()
@@ -32,6 +33,12 @@ const genAI = new GoogleGenerativeAI(
     process.env.EXPO_PUBLIC_GEMINI_API_KEY || '',
 )
 const model = genAI.getGenerativeModel({ model: 'gemini-1.5-pro' })
+
+const systemPrompts: Record<string, string> = {
+    parking: 'You help users reserve parking spots.',
+    bus: 'You assist users with bus reservations.',
+    spaces: 'You assist users with booking spaces and rooms.'
+}
 
 // Helper function to format markdown text
 const formatMarkdownText = (text: string) => {
@@ -87,6 +94,8 @@ const MessageScreen = () => {
     const scrollViewRef = useRef<ScrollView>(null)
     const [keyboardVisible, setKeyboardVisible] = useState(false)
     const [keyboardHeight, setKeyboardHeight] = useState(0)
+
+    const { bot } = useLocalSearchParams<{ bot?: string }>()
 
     const colorScheme = useColorScheme();
 
@@ -217,7 +226,7 @@ const MessageScreen = () => {
                             role: 'user',
                             parts: [
                                 {
-                                    text: 'You are a plant expert. Only answer questions related to greetings, plants, fruits, vegetables, trees, flowers, leaves, gardening, botany, and nature. If a question is unrelated, politely ask the user to stay on topic. If I send you an image of a plant, identify it and provide care instructions.',
+                                    text: systemPrompts[bot as string] || 'You are a helpful assistant.',
                                 },
                             ],
                         },

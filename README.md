@@ -40,8 +40,8 @@ This project is a React Native template for building AI chat applications on And
 
 ### Clone the Repository
 ```sh
-git clone https://github.com/yourusername/planty.git
-cd planty
+git clone https://github.com/yourusername/anty.git
+cd anty
 ```
 
 ### Install Dependencies

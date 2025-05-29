@@ -5,7 +5,6 @@ import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import { AuthProvider } from '../context/AuthProvider';
-import { NavigationContainer } from '@react-navigation/native';
 import { Provider } from 'react-redux';
 import { store } from '../store/store';
 
@@ -33,9 +32,8 @@ const RootLayout = () => {
 
   if (!fontsLoaded && !error) return null;
 
-  return (
-    <Provider store={store}>
-      <NavigationContainer>
+    return (
+      <Provider store={store}>
         <AuthProvider>
           <Stack>
                 <Stack.Screen name="index" options={{ headerShown: false }} />
@@ -44,9 +42,8 @@ const RootLayout = () => {
                 <Stack.Screen name="(auth)" options={{ headerShown: false }} />
           </Stack>
         </AuthProvider>
-      </NavigationContainer>
-    </Provider>
-  );  
-};
+      </Provider>
+    );
+  };
 
 export default RootLayout;

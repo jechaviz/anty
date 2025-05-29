@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "anty",
-    "slug": "anty",
+    "name": "Anty",
+    "slug": "antamina",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -28,16 +28,19 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
+      "expo-font",
       "expo-router",
-      "expo-font"
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true
     },
     "extra": {
       "eas": {
-        "projectId": "d7236c21-33b9-4ed7-8a29-dcc1602f5f0b"
+        "projectId": "d7236c21-33b9-4ed7-8a29-dcc1602f5f0b",
+        "owner": "jechaviz",
+        "userInterfaceStyle": "automatic"
       }
-    }
+    },
   }
 }
